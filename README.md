@@ -1,0 +1,2 @@
+# AwesomeInfoBar
+ESO: AwesomeInfoBar
