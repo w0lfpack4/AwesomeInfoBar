@@ -45,6 +45,9 @@ AIB.plugins["Champion"] = {
 	RegisterEvents = function()
 		--ZO_PreHookHandler(ZO_PlayerProgressBar, 'OnUpdate', AIB.plugins.Champion.UpdateChampion)
 		EVENT_MANAGER:RegisterForEvent("AI_Champion", EVENT_EXPERIENCE_GAIN, AIB.plugins.Champion.UpdateChampion)
+		EVENT_MANAGER:RegisterForEvent("AI_Champion", EVENT_CHAMPION_POINT_GAINED , AIB.plugins.Champion.UpdateChampion)
+		EVENT_MANAGER:RegisterForEvent("AI_Champion", EVENT_CHAMPION_POINT_CHANGED, AIB.plugins.Champion.UpdateChampion)
+		EVENT_MANAGER:RegisterForEvent("AI_Champion", EVENT_UNSPENT_CHAMPION_POINTS_CHANGED, AIB.plugins.Champion.UpdateChampion)
 		--EVENT_MANAGER:RegisterForUpdate("AI_Champion", 100, AIB.plugins.Champion.UpdateChampion)	
 	end,			
 	
