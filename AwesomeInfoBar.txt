@@ -1,8 +1,8 @@
 ## APIVersion: 100028 100029
-## Version: 3.2
+## Version: 3.2-enlightenment
 ## Title: |cFF6060Awesome |cffffffInfo Bar|r
 ## Author: |cFF6060Keg|r
-## Description: |cffa500Tracks attributes, skills, gold, soul gems, skyshards, horse training, durability, bag space, food buffs.|r
+## Description: |cffa500Tracks attributes, skills, gold, soul gems, skyshards, horse training, durability, bag space, food buffs, quests, and enlightenment.|r
 ## DependsOn: LibStub LibAddonMenu-2.0 LibFoodDrinkBuff
 ## SavedVariables: AIB_SavedVariables
 
@@ -51,9 +51,17 @@ research.lua
 ## Plugin for weapon swap
 weaponswap.lua
 
+## Plugin for quests (Added by wwise)
+quests.lua
+
+## Plugin for enlightenment
+enlightenment.lua
+
+## Plugin for bank space
+bankspace.lua
+
 ## The settings menu
 settings.lua
 
 ## frame definitions for info labels
 AwesomeInfoBar.xml
-

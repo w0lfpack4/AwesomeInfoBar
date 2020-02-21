@@ -1,95 +1,110 @@
 <GuiXml>
-    <Controls>
-        <TopLevelControl name="AwesomeInfoBar" mouseEnabled="true" clampedToScreen="true">                        
-			<OnMouseEnter>
-				AwesomeInfoBar:SetAlpha(1)
-			</OnMouseEnter>
-			<OnUpdate>
-                AIB.OnUpdate()
-			</OnUpdate>
-			<OnMoveStart>
-				AIB.MoveStart()
-			</OnMoveStart>
-			<OnMoveStop>
-				AIB.MoveStop()
-			</OnMoveStop>
-            <Controls>
-				<Texture name="$(parent)BG1" textureFile="EsoUI/Art/Performance/StatusMeterMunge.dds">
-					<Dimensions x="192" y="192"/>
-					<Anchor point="CENTER" relativeTo="$(parent)" relativePoint="CENTER"/>
-				</Texture>
-                <Backdrop name="$(parent)BG2" inherits="ZO_DefaultBackdrop" /> -->
-                <Label name="$(parent)LabelSwap" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelChampion" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelAttributes" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelSkills" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelGold"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelBank"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelGems"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelBags"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelDurability"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelCharge" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelShards"  font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>
-                <Label name="$(parent)LabelMount"  font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>	
-                <Label name="$(parent)LabelFood"  font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>	
-                <Label name="$(parent)LabelResearch"  font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
-					<OnMouseUp>
-						AIB.OnMouseUp(self, button, upInside)
-					</OnMouseUp>
-				</Label>	
-            </Controls>
-        </TopLevelControl>	
-    </Controls>
+  <Controls>
+    <TopLevelControl name="AwesomeInfoBar" mouseEnabled="true" clampedToScreen="true">
+      <OnMouseEnter>
+        AwesomeInfoBar:SetAlpha(1)
+      </OnMouseEnter>
+      <OnUpdate>
+        AIB.OnUpdate()
+      </OnUpdate>
+      <OnMoveStart>
+        AIB.MoveStart()
+      </OnMoveStart>
+      <OnMoveStop>
+        AIB.MoveStop()
+      </OnMoveStop>
+      <Controls>
+        <Texture name="$(parent)BG1" textureFile="EsoUI/Art/Performance/StatusMeterMunge.dds">
+          <Dimensions x="192" y="192"/>
+          <Anchor point="CENTER" relativeTo="$(parent)" relativePoint="CENTER"/>
+        </Texture>
+        <Backdrop name="$(parent)BG2" inherits="ZO_DefaultBackdrop" /> -->
+        <Label name="$(parent)LabelSwap" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelChampion" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelEnlightenment" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelAttributes" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelSkills" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelGold"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelBank"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelBankSpace"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelGems"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelBags"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelDurability"   font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelCharge" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelShards"  font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelMount"  font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelFood"  font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelResearch"  font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+        <Label name="$(parent)LabelQuests"  font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+          <OnMouseUp>
+            AIB.OnMouseUp(self, button, upInside)
+          </OnMouseUp>
+        </Label>
+      </Controls>
+    </TopLevelControl>
+  </Controls>
 </GuiXml>
