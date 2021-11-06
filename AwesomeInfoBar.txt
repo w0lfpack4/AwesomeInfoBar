@@ -1,9 +1,9 @@
-## APIVersion: 100028 100029
+## APIVersion: 100035 100036
 ## Version: 3.2
 ## Title: |cFF6060Awesome |cffffffInfo Bar|r
 ## Author: |cFF6060Keg|r
 ## Description: |cffa500Tracks attributes, skills, gold, soul gems, skyshards, horse training, durability, bag space, food buffs.|r
-## DependsOn: LibStub LibAddonMenu-2.0 LibFoodDrinkBuff
+## DependsOn: LibAddonMenu-2.0 LibFoodDrinkBuff
 ## SavedVariables: AIB_SavedVariables
 
 ## The core functions of the addon

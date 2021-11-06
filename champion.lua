@@ -77,13 +77,13 @@ AIB.plugins["Champion"] = {
 			if (AIB.saved.character.Champion.showSpent) then
 				if (AIB.saved.character.Champion.onlyShowSpent) then
 					if (pointsSpent < points) then
-						display = AI.colors.red..pointsSpent
+						display = AIB.colors.red..pointsSpent
 					else
-						display = AI.colors.red..0
+						display = AIB.colors.red..0
 					end
 				else
 					if (pointsSpent < points) then
-						display = AI.colors.red..pointsSpent.."|r/"..points
+						display = AIB.colors.red..pointsSpent.."|r/"..points
 					else
 						display = points
 					end
@@ -117,7 +117,7 @@ AIB.plugins["Champion"] = {
 			if GetNumChampionXPInChampionPoint(currentLevel) ~= nil then
 				currentLevel = currentLevel + 1
 			end
-        	local nextPoint = GetChampionPointAttributeForRank(currentLevel)
+        	local nextPoint = GetChampionPointPoolForRank(currentLevel)
 			local color1 = ZO_CP_BAR_GRADIENT_COLORS[nextPoint][1]
 			local color2 = ZO_CP_BAR_GRADIENT_COLORS[nextPoint][2]
 			AIB.setLabelColor("Champion", color2.r, color2.g, color2.b, color2.a)

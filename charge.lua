@@ -116,7 +116,7 @@ AIB.plugins["Charge"] = {
 			if (quality ~= nil) then
 				value = zo_strformat(SI_TOOLTIP_ITEM_NAME, quality..name).." ("..lowWeaponValue.."%)"
 			else
-				value = AI.colors.red.."Missing Weapon!"
+				value = AIB.colors.red.."Missing Weapon!"
 			end
 			
 			-- set value
