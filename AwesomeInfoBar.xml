@@ -29,6 +29,11 @@
 						AIB.OnMouseUp(self, button, upInside)
 					</OnMouseUp>
 				</Label>
+                <Label name="$(parent)LabelCompanion"  font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
+					<OnMouseUp>
+						AIB.OnMouseUp(self, button, upInside)
+					</OnMouseUp>
+				</Label>	
                 <Label name="$(parent)LabelAttributes" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="" mouseEnabled="true" >
 					<OnMouseUp>
 						AIB.OnMouseUp(self, button, upInside)
