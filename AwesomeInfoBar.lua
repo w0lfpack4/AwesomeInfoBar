@@ -321,7 +321,7 @@ function AIB.UpdateWidthAndHeight()
 			end
 		end	
 	end
-    		
+	    		
 	-- set the addon height and width
 	_G[AIB.name]:SetWidth(maxWidth)
 	_G[AIB.name]:SetHeight(maxHeight+20) 
@@ -331,6 +331,8 @@ function AIB.UpdateWidthAndHeight()
 			
 	-- reset the anchor
 	AIB.UpdateAnchor()
+
+	return maxHeight
 end --AIB.UpdateWidthAndHeight
 
 
